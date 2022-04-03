@@ -1,14 +1,15 @@
 import { useState } from "react";
-export default function State() {
+function State() {
   const [data, setData] = useState("Sana");
   function update() {
-    setData("Pallo");
+    setData("Sans");
   }
-  console.log("-----------");
+  console.warn("-----------");
   return (
     <div>
       <div>{data}</div>
-      <button onClick={update}>Click me</button>
+      <button onClick={() => update()}>Click me</button>
     </div>
   );
 }
+export default State;

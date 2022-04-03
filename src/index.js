@@ -9,8 +9,6 @@ import State from "./State";
 
 ReactDOM.render(
   <React.StrictMode>
-    <User />
-    <User1 />
     <State />
   </React.StrictMode>,
   document.getElementById("root")
